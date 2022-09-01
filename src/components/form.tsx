@@ -12,7 +12,7 @@ export function Form() {
       return;
     }
 
-    const res = await fetch('http://localhost:51568/.netlify/functions/count', {
+    const res = await fetch('https://webcampsibeniktst.netlify.app/.netlify/functions/count', {
       method: 'POST',
       body: JSON.stringify({ count }),
     }).then((res) => res.json());
